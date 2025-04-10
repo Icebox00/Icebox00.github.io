@@ -1,0 +1,43 @@
+
+img, p, h1, h2, h3, #divider {
+	width: 100%;
+	max-width: 640px;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+img {
+    display: block;
+    padding: 15px 0px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 0.4;
+    font-family: "Inter";
+}
+
+h1, h2, h3 { 
+    font-family: "National Park";
+    }
+
+#divider {
+        height: 2px;
+        background-color: #0868ac;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+#kitty {
+    display: block;
+    padding: 30px 0px;
+    max-width: 250px;
+    
+}
+        
+h3 {
+    animation: forwards;
+    color: #3415db;
+    font-size: 20px;
+}
