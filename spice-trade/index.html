@@ -6,6 +6,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=National+Park:wght@200..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
         <script src="https://d3js.org/d3.v7.min.js"></script>
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     </head>
     <body>
         <h1>Spice</h1>
@@ -24,42 +25,11 @@
                 <br>
                 Hover or click to interact with the visualization.</p>
                 <br>
-            <div id = "myChart"></div>
-            <script>
-                const width = 600, height = 400;
-            
-                const svg = d3.select("#myChart")
-                  .append("svg")
-                  .attr("width", width)
-                  .attr("height", height);
-            
-                d3.csv("exporters.csv").then(data => {
-                  data.forEach(d => d.Export = +d.Export);
-                  const root = d3.hierarchy({children: data}).sum(d => d.Export);
-                  d3.treemap().size([width, height]).padding(2)(root);
-            
-                  svg.selectAll("rect")
-                    .data(root.leaves())
-                    .join("rect")
-                    .attr("x", d => d.x0)
-                    .attr("y", d => d.y0)
-                    .attr("width", d => d.x1 - d.x0)
-                    .attr("height", d => d.y1 - d.y0)
-                    .attr("fill", "tomato");
-            
-                  svg.selectAll("text")
-                    .data(root.leaves())
-                    .join("text")
-                    .attr("x", d => d.x0 + 5)
-                    .attr("y", d => d.y0 + 20)
-                    .text(d => d.data.Area)
-                    .attr("fill", "white");
-                });
-              </script>
+            <div id="treemap" style="width: 100%; height: 600px;"></div>
         </div>
         <img src = "images\rhode_island.png">
         <h2>About this story</h2>
         <p>Here's a <a href="https://www.brown.edu/">link</a>.</p>
     </body>
-    <script src="scripts/scatter.js"></script>
+    <script src="scripts/treemap.js"></script>
 </html>

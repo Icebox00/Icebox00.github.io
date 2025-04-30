@@ -10,20 +10,26 @@ img, p, h1, h2, h3, #divider {
 body {
     background-image: url("https://www.transparenttextures.com/patterns/subtle-white-feathers.png");
     background-repeat: repeat;
-    background-color: #8f4117; 
+    background-color: #6e2712; 
     margin: 0;
     padding: 0;
-    color: #8f4117;
+    color: #6e2712;
 }
 
 .container {
     max-width: 1200px;
     margin: auto;
     padding: 2rem;
-    background-color: rgba(255,255,255,0.9);
+    background-color: #cea18d;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
   }
+
+#myChart {
+    width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
 
 img {
     display: block;
