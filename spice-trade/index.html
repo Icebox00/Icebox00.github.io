@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-
 <html>
     <head>
         <link rel="stylesheet" href="styles.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=National+Park:wght@200..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=National+Park:wght@200..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+        <script src="https://d3js.org/d3.v7.min.js"></script>
     </head>
     <body>
         <h1>Spice</h1>
@@ -14,8 +14,52 @@
         <p>"I'm hosted with GitHub Pages." blahblahblahblahblah</p>
         <p>ahahahahahahahha</p>
         <img id="kitty" src="data:image/jpeg;base64,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">
+        
+        <div class="container">
+            <h2>Overview</h2>
+            <p>Explore chili pepper export data from countries around the world.
+                <br>
+                <br>
+                <br>
+                <br>
+                Hover or click to interact with the visualization.</p>
+                <br>
+            <div id = "myChart"></div>
+            <script>
+                const width = 600, height = 400;
+            
+                const svg = d3.select("#myChart")
+                  .append("svg")
+                  .attr("width", width)
+                  .attr("height", height);
+            
+                d3.csv("exporters.csv").then(data => {
+                  data.forEach(d => d.Export = +d.Export);
+                  const root = d3.hierarchy({children: data}).sum(d => d.Export);
+                  d3.treemap().size([width, height]).padding(2)(root);
+            
+                  svg.selectAll("rect")
+                    .data(root.leaves())
+                    .join("rect")
+                    .attr("x", d => d.x0)
+                    .attr("y", d => d.y0)
+                    .attr("width", d => d.x1 - d.x0)
+                    .attr("height", d => d.y1 - d.y0)
+                    .attr("fill", "tomato");
+            
+                  svg.selectAll("text")
+                    .data(root.leaves())
+                    .join("text")
+                    .attr("x", d => d.x0 + 5)
+                    .attr("y", d => d.y0 + 20)
+                    .text(d => d.data.Area)
+                    .attr("fill", "white");
+                });
+              </script>
+        </div>
         <img src = "images\rhode_island.png">
         <h2>About this story</h2>
         <p>Here's a <a href="https://www.brown.edu/">link</a>.</p>
     </body>
+    <script src="scripts/scatter.js"></script>
 </html>
