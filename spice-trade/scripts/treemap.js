@@ -190,7 +190,7 @@ d3.csv("https://icebox00.github.io/spice-trade/exporters.csv").then(data => {
 
     svg.append("text")
       .attr("x", 0)
-      .attr("y", 20)
+      .attr("y", 15)
       .text("China and India Dominate the Supply of Global Dried Chili Markets")
       .attr("font-size", "24px")
       .attr("fill",  "#472A28" )
@@ -201,7 +201,7 @@ d3.csv("https://icebox00.github.io/spice-trade/exporters.csv").then(data => {
       .attr("x", 0)
       .attr("y", 40)
       .text("2023's 10 Largest Exporters of Dried Chilies (shares of export market in metric tons)")
-      .attr("font-size", "12px")
+      .attr("font-size", "16px")
       .attr("fill",  "#472A28" )
       .attr("opacity", 0.8);
 

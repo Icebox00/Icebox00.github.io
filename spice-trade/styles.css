@@ -1,10 +1,6 @@
 
-h1, h2, h3, #divider {
-	width: 100%;
-	max-width: 640px;
-	margin-left: auto;
-	margin-right: auto;
-
+h1, h2, h3, .container, .transparent-container, #divider {
+    max-width: 1200px;
 }
 
 body {
@@ -16,8 +12,14 @@ body {
     color: #b35340;
 }
 
+#divider {
+    height: 2px;
+    background-color: #472A28;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
 .container {
-    max-width: 1200px;
     margin: auto;
     padding: 2rem;
     background-color: #cea18d;
@@ -43,14 +45,6 @@ body {
     font-family: "Inter";
 }
 
-#lineChart {
-    width: 100%;
-	margin-left: auto;
-	margin-right: auto;
-    position: relative;
-    font-family: "Inter";
-}
-
 svg {
     width: 100%;
     height: auto;
@@ -58,18 +52,17 @@ svg {
     position: relative;
 }
 
-
 img {
     display: block;
-    padding: 15px 0px;
+    padding-right: 100px;
     position: relative;
 }
 
-
-p {
-    font-size: 12px;
-    line-height: 0.4;
-    font-family: "Inter";
+#kitty {
+    display: block;
+    padding: 30px 0px;
+    max-width: 250px;
+    margin-right: 0;
 }
 
 #source {
@@ -81,26 +74,34 @@ p {
     position: relative;
   }
 
+
 h1, h2, h3 { 
+        font-family: "Inter";
+    }
+
+p {
+    font-size: 16px;
+    line-height: 0.4;
+    color: #472A28;
     font-family: "Inter";
-    }
-
-#divider {
-        height: 2px;
-        background-color: #0868ac;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-
-#kitty {
-    display: block;
-    padding: 30px 0px;
-    max-width: 250px;
-    
 }
-        
+
 h3 {
     animation: forwards;
-    color: #3415db;
+    color: #b35340;
     font-size: 20px;
+}
+
+h2 {
+    animation: forwards;
+    color: #472A28;
+    font-size: 24px;
+    text-align: center;
+}
+
+h1 {
+    animation: forwards;
+    color: #472A28;
+    font-size: 64px;
+    text-align: center;
 }
