@@ -1,5 +1,5 @@
 
-img, p, h1, h2, h3, #divider {
+h1, h2, h3, #divider {
 	width: 100%;
 	max-width: 640px;
 	margin-left: auto;
@@ -62,13 +62,24 @@ svg {
 img {
     display: block;
     padding: 15px 0px;
+    position: relative;
 }
 
+
 p {
-    font-size: 18px;
+    font-size: 12px;
     line-height: 0.4;
     font-family: "Inter";
 }
+
+#source {
+    text-align: left;
+    color: #4f4e4e;
+    display: block;
+    font-size: 12px;
+    margin: 5px 0 0 95px;
+    position: relative;
+  }
 
 h1, h2, h3 { 
     font-family: "Inter";
