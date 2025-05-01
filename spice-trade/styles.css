@@ -58,13 +58,6 @@ img {
     position: relative;
 }
 
-#kitty {
-    display: block;
-    padding: 30px 0px;
-    max-width: 250px;
-    margin-right: 0;
-}
-
 #source {
     text-align: left;
     color: #4f4e4e;
@@ -81,9 +74,10 @@ h1, h2, h3 {
 
 p {
     font-size: 16px;
-    line-height: 0.4;
+    line-height: 1.6;
     color: #472A28;
     font-family: "Inter";
+    text-indent: 2em;
 }
 
 h3 {
