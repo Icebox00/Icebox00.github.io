@@ -25,6 +25,7 @@ body {
     background-color: #cea18d;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: relative;
   }
 
 .transparent-container {
@@ -34,6 +35,7 @@ body {
     background-color: rgba(206, 161, 141, 0.85);
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: relative;
   }
 
 
